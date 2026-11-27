@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0d1116">
+<meta name="format-detection" content="telephone=no">
+<title>对半分</title>
+<link rel="stylesheet" href="./game.css">
+</head>
+<body>
+<div class="stage" id="stage">
+  <canvas id="field"></canvas>
+
+  <div class="hud hud-top" id="hudTop" aria-hidden="true">
+    <div class="score" id="scoreTop">0</div>
+    <div class="who">上方</div>
+  </div>
+  <div class="hud hud-bottom" id="hudBottom" aria-hidden="true">
+    <div class="score" id="scoreBot">0</div>
+    <div class="who">下方</div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <div class="flash" id="flash"></div>
+
+  <div class="overlay" id="overlay">
+    <div class="panel">
+      <p class="kicker" id="ovKicker">两个人，一台手机</p>
+      <h1 id="ovTitle">对半分</h1>
+      <p class="sub" id="ovSub">各守一端，把球打过对方底线</p>
+      <p class="hint" id="ovHint">手机平放桌面，两人分持上下两端</p>
+      <div class="acts" id="ovActs"></div>
+      <p class="foot" id="ovFoot">先到 7 分</p>
+    </div>
+  </div>
+</div>
+
+<div class="boot" id="boot"><span class="spin"></span>加载中…</div>
+
+<script src="./game.js"></script>
+</body>
+</html>
